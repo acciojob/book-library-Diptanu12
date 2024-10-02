@@ -1,66 +1,85 @@
-
+/* General Styles */
 body {
     background-color: #f8f8f8;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    text-align: center;
 }
+
+h1 {
+    font-size: 2em;
+    text-align: center;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
 
 .book-library {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: #ffffff;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    max-width: 800px;
-    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 /* Individual Book Block */
 .book {
     text-align: center;
     margin: 20px;
-    flex: 1 1 30%;
-    max-width: 200px;
+    width: 200px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
 }
 
 .book img {
     width: 100%;
     height: auto;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
-.book h3 {
-    font-size: 1.2em;
+.book h2 {
+    font-size: 1.5em;
     margin: 10px 0;
+    color: #333333;
 }
 
-.book .author {
-    color: #777777;
+
+.details {
+   
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: white;
+}
+
+.details .author {
+    color: rgb(119, 119, 119);
     margin-bottom: 5px;
 }
 
-.book .price {
-    color: #2ecc71;
+.details .price {
+    color: #ffffff;
     font-weight: bold;
+	 background-color: rgb(46, 204, 113); 
 }
 
 
 @media (max-width: 768px) {
     .book {
-        flex: 1 1 45%;
+        width: 45%;
     }
 }
 
 @media (max-width: 480px) {
     .book {
-        flex: 1 1 100%;
+        width: 100%;
     }
 }
