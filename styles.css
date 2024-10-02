@@ -53,7 +53,7 @@ h1 {
 
 
 .details {
-   
+    background-color: rgb(46, 204, 113); /* Ensure this is present */
     padding: 10px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
